@@ -1,0 +1,53 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "To Do App" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Keep track of your tasks
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Add New Item" [level=2] [ref=e9]
+      - generic [ref=e10]:
+        - textbox "Enter item name" [ref=e11]
+        - button "Add Item" [ref=e12] [cursor=pointer]
+    - generic [ref=e13]:
+      - heading "Tasks" [level=2] [ref=e14]
+      - generic [ref=e15]:
+        - textbox "Task description" [ref=e16]
+        - textbox [ref=e17]:
+          - /placeholder: Due date
+        - textbox "Notes (optional)" [ref=e18]
+        - button "Add Task" [ref=e19] [cursor=pointer]
+      - generic [ref=e20]:
+        - textbox "Search tasks" [ref=e21]
+        - combobox [ref=e22]:
+          - option "All" [selected]
+          - option "Active"
+          - option "Completed"
+        - combobox [ref=e23]:
+          - option "Any due" [selected]
+          - option "Overdue"
+          - option "Due today"
+          - option "Upcoming"
+      - list [ref=e24]:
+        - listitem [ref=e25]:
+          - generic [ref=e26]:
+            - checkbox "E2E test task 1766093629603" [checked] [active] [ref=e27]
+            - text: E2E test task 1766093629603
+          - generic [ref=e28]:
+            - button "Edit" [ref=e29] [cursor=pointer]
+            - button "Delete" [ref=e30] [cursor=pointer]
+    - generic [ref=e31]:
+      - heading "Items from Database" [level=2] [ref=e32]
+      - list [ref=e33]:
+        - listitem [ref=e34]:
+          - generic [ref=e35]: Item 1
+          - button "Delete" [ref=e36] [cursor=pointer]
+        - listitem [ref=e37]:
+          - generic [ref=e38]: Item 2
+          - button "Delete" [ref=e39] [cursor=pointer]
+        - listitem [ref=e40]:
+          - generic [ref=e41]: Item 3
+          - button "Delete" [ref=e42] [cursor=pointer]
+```

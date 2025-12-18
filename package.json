@@ -13,11 +13,17 @@
     "test": "npm run test:frontend && npm run test:backend",
     "test:frontend": "npm run test --workspace=frontend",
     "test:backend": "npm run test --workspace=backend",
+    "test:e2e": "npm run test --workspace=e2e",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "test:e2e": "npm run test --workspace=e2e",
     "install:all": "npm install && npm run install:frontend && npm run install:backend",
     "install:frontend": "cd packages/frontend && npm install",
     "install:backend": "cd packages/backend && npm install"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.32.0"
   }
 }
